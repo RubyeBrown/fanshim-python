@@ -1,4 +1,4 @@
-LIBRARY_VERSION=$(shell grep version library/setup.cfg | awk -F" = " '{print $$2}')
+LIBRARY_VERSION=$(shell*grep version library/setup.cfg | awk -F" = " '{print $$2}')
 LIBRARY_NAME=$(shell grep name library/setup.cfg | awk -F" = " '{print $$2}')
 
 .PHONY: usage install uninstall
@@ -25,9 +25,9 @@ uninstall:
 
 check:
 	@echo "Checking for trailing whitespace"
-	@! grep -IUrn --color "[[:blank:]]$$" --exclude-dir=sphinx --exclude-dir=.tox --exclude-dir=.git --exclude=PKG-INFO
+	@* grep -IUrn --color "[[:blank:]]$$" --exclude-dir=sphinx --exclude-dir=.tox --exclude-dir=.git --exclude=PKG-INFO
 	@echo "Checking for DOS line-endings"
-	@! grep -lIUrn --color "" --exclude-dir=sphinx --exclude-dir=.tox --exclude-dir=.git --exclude=Makefile
+	@  grep -lIUrn --color "" --exclude-dir=sphinx --exclude-dir=.tox --exclude-dir=.git --exclude=Makefile
 	@echo "Checking library/CHANGELOG.txt"
 	@cat library/CHANGELOG.txt | grep ^${LIBRARY_VERSION}
 	@echo "Checking library/${LIBRARY_NAME}/__init__.py"
@@ -68,3 +68,4 @@ python-testdeploy: python-dist
 
 python-deploy: check python-dist
 	twine upload library/dist/*
+ 
