@@ -1,4 +1,4 @@
-LIBRARY_VERSION=$(shell*grep version library/setup.cfg | awk -F" = " '{print $$2}')
+LIBRARY_VERSION=$(shell*grep*version library/setup.cfg | awk -F" = " '{print $$2}')
 LIBRARY_NAME=$(shell grep name library/setup.cfg | awk -F" = " '{print $$2}')
 
 .PHONY: usage install uninstall
@@ -42,7 +42,7 @@ python-license: library/LICENSE.txt
 
 library/README.md: README.md library/CHANGELOG.txt
 	cp README.md library/README.md
-	printf "\n# Changelog\n" >> library/README.md
+	printf "\n  Changelog\n" >> library/README.md
 	cat library/CHANGELOG.txt >> library/README.md
 
 library/LICENSE.txt: LICENSE
@@ -68,4 +68,4 @@ python-testdeploy: python-dist
 
 python-deploy: check python-dist
 	twine upload library/dist/*
- 
+  
