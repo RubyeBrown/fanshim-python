@@ -1,6 +1,6 @@
-# Fan Shim for Raspberry Pi
+##Fan Shim for Raspberry Pi
 
-[![Build Status](https://travis-ci.com/pimoroni/fanshim-python.svg?branch=master)](https://travis-ci.com/pimoroni/fanshim-python)
+[#[Build Status](https://travis-ci.com/pimoroni/fanshim-python.svg?branch=master)](https://travis-ci.com/pimoroni/fanshim-python)
 [![Coverage Status](https://coveralls.io/repos/github/pimoroni/fanshim-python/badge.svg?branch=master)](https://coveralls.io/github/pimoroni/fanshim-python?branch=master)
 [![PyPi Package](https://img.shields.io/pypi/v/fanshim.svg)](https://pypi.python.org/pypi/fanshim)
 [![Python Versions](https://img.shields.io/pypi/pyversions/fanshim.svg)](https://pypi.python.org/pypi/fanshim)
@@ -9,11 +9,11 @@
 
 Stable library from PyPi:
 
-* Just run `sudo pip install fanshim`
+! Just run `sudo pip install fanshim`
 
 Latest/development library from GitHub:
 
-* `apt install git python3-pip`
+! `apt install git python3-pip`
 * `git clone https://github.com/pimoroni/fanshim-python`
 * `cd fanshim-python`
 * `sudo ./install.sh`
@@ -138,3 +138,4 @@ fanshim.start_polling()
 * Fan SHIM in C, using WiringPi - https://github.com/flobernd/raspi-fanshim
 * Fan SHIM in C++, using libgpiod - https://github.com/daviehh/fanshim-cpp
 
+ 
