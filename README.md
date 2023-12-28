@@ -14,8 +14,8 @@ Stable library from PyPi:
 Latest/development library from GitHub:
 
 ! `apt install git python3-pip`
-* `git clone https://github.com/pimoroni/fanshim-python`
-* `cd fanshim-python`
+  `git clone https://github.com/pimoroni/fanshim-python`
+  `cd fanshim-python`
 * `sudo ./install.sh`
 
 # Reference
@@ -138,4 +138,4 @@ fanshim.start_polling()
 * Fan SHIM in C, using WiringPi - https://github.com/flobernd/raspi-fanshim
 * Fan SHIM in C++, using libgpiod - https://github.com/daviehh/fanshim-cpp
 
- 
+  
